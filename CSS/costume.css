@@ -1,0 +1,562 @@
+@charset "UTF-8";
+
+/* Add ElMessiri Font To Project */
+@font-face {
+    font-family: 'ElMessiri Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ElMessiri Regular'), url('./fonts/ElMessiri/ElMessiri-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ElMessiri Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ElMessiri Regular'), url('./fonts/ElMessiri/ElMessiri-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ElMessiri Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ElMessiri Regular'), url('./fonts/ElMessiri/ElMessiri-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ElMessiri SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ElMessiri Regular'), url('./fonts/ElMessiri/ElMessiri-SemiBold.ttf') format('ttf');
+}
+
+/* Add Dubai Font To Project */
+@font-face {
+    font-family: 'Dubai Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Regular'), url('./fonts/Dubai/Dubai-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Dubai Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Light'), url('./fonts/Dubai/Dubai-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Dubai Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Medium'), url('./fonts/Dubai/Dubai-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Dubai Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Bold'), url('./fonts/Dubai/Dubai-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: ElMessiri;
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/ElMessiri-VariableFont_wght.ttf");
+}
+
+:root {
+    --yellow-color: #FFAF4F;
+    --white-color: #FFFFFF;
+    --background-color: #292724;
+    --background-color-2: #161616;
+    --color-1: #BDBDBD;
+    --color-2: #4D4D4D;
+    --color-3: #C4C4C4;
+}
+
+main {
+    background-color: var(--background-color-2);
+}
+
+.font-ElMessiri {
+    font-family: 'ElMessiri';
+}
+
+.font-ElMessiri-Regulaer {
+    font-family: 'ElMessiri Regular' !important;
+}
+
+
+.font-Dubai {
+    font-family: 'Dubai Regular';
+}
+
+
+.color-grey {
+    color: var(--color-2);
+}
+
+.color-yellow {
+    color: var(--yellow-color) !important;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .ul-pos{
+        top: 240px;
+        left: -30px;
+    }
+    .mr-100 {
+        margin-top: 50px;
+    }
+
+    #PLN {
+        left: 10%;
+    }
+
+    .mx-lg-width {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .mr-100 {
+        margin-top: 100px;
+    }
+    .ul-pos {
+        top: 240px;
+        left: 0px;
+    }
+    .left-70 {
+        left: 70px;
+    }
+
+    .t-310 {
+        top: 310px;
+    }
+
+    .t-410 {
+        top: 410px;
+    }
+  
+}
+
+
+
+#section-2,
+#section-4,
+#section-6,
+#section-8 {
+    background-color: var(--background-color);
+}
+
+::marker {
+    color: transparent !important;
+}
+
+#section-1,
+#section-3,
+#section-5,
+#section-7,
+#endpage {
+    background-color: var(--background-color-2);
+}
+
+div.gold-line::before {
+
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.315));
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0%;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../img/icons/line-1-opacity.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div.gold-line::after {
+
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.315));
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0%;
+    right: 0;
+    bottom: 0px;
+    background-image: url('../img/icons/line-1.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#section-5 > .container > .row {
+    gap: 25px 0;
+}
+
+p.text-center {
+    font-family: Dubai;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-costume {
+    color: var(--background-color-2);
+    background-color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+
+.btn-outline-costume {
+    color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+
+p.max-width {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.btn-outline-costume:hover {
+    color: var(--yellow-color);
+}
+
+#navigation > li::marker {
+    color: transparent !important;
+}
+
+#navigation {
+    padding-left: 0;
+}
+
+#navigation > li {
+    margin-bottom: 15px;
+}
+
+#navigation > li > a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.font-stile {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.nav-text-val {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+p.detail-company {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h1.footer-brand {
+    line-height: 50px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+div.col-sm-5.d-flex.align-content-center.flex-column.flex-wrap {
+    gap: 10px;
+}
+
+#scroll-down {
+    margin-top: 84px;
+}
+
+
+#PLN {
+    /* Rectangle 8 */
+    position: absolute;
+    padding: 20px;
+    top: 33%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+#PLN > div > p {
+    font-family: 'ElMessiri';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 99.8%;
+}
+
+#hndplus {
+    /* Rectangle 8 */
+    position: absolute;
+    padding: 20px;
+    top: 0%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+#hndplus > div > div > p:first-child {
+    font-size: 28px;
+    line-height: 44px;
+}
+
+#hndplus > div > div > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#line-2 {
+    top: 100%;
+    left: 60%;
+}
+
+.option {
+    position: absolute;
+    width: 124px;
+    height: 73px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+.position-4{
+    left: 20%;
+    bottom: 0%;
+    width: 60%;
+}
+
+.position-1 {
+    bottom: 50%;
+    right: 0%;
+}
+
+.position-2 {
+    top: 15%;
+    right: 25%;
+}
+
+.position-3 {
+    top: 30%;
+    left: 10%;
+}
+
+.letter-stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--white-color);
+    font-family: 'ElMessiri';
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.text-stroke-inner {
+
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    pointer-events: none;
+    opacity: 0.25;
+    will-change: transform;
+}
+
+#line1 {
+    top: 100%;
+    right: 40%;
+}
+
+#line2 {
+    top: 100%;
+    left: 50%;
+}
+
+#line3 {
+    top: 100%;
+    left: 30%;
+}
+
+div.d-flex.flex-column.text-center > p:first-child {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+}
+
+div.d-flex.flex-column.text-center > p:nth-child(2) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+.z-indexTop {
+    z-index: 3;
+}
+
+
+.bakery-txt{
+    top: 64%;
+    left: 52%;
+    width: inherit;
+}
+.bakery-large{
+    left: -10px;
+}
+#line-left-2{
+    top: 100%;
+    left: 11%;
+}
+.navbar-dark .navbar-brand .line {
+    position: absolute;
+    width: 35px;
+    height: 0px;
+    right: 16px;
+    top: 19px;
+    border: 1px solid var(--yellow-color);
+}
+.navbar-dark .navbar-brand, .navbar-dark .navbar-brand:hover {
+    font-family: El Messiri, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 47px;
+    color: var(--yellow-color);
+}
+.navbar-nav>.nav-item{
+    margin-right: 20px;
+}
+
+
+
+/* Search box */
+.search__title {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.search__input {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    background-image: url("../img/icons/search1.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+
+
+    transition: all 250ms ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input::-moz-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input:-ms-input-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input::-ms-input-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input,
+.search__input:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+ul.d-md-flex.align-items-center.d-none.flex-wrap.flex-row>li{
+    margin-right: 20px;
+}
+#Buns{
+    right: 0;
+}

@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery in Ukraine</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/costume.css">
+    <style>
+        #my-scrollbar {
+            width: 99.9%;
+            height: 100vh;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="my-scrollbar">
+        <main>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark"
+                    style="background-color: var(--background-color-2);z-index: 3;">
+                    <div class="position-relative">
+                        <a class="navbar-brand color-yellow" href="#">
+                            The Bakery
+                            <span class="line"></span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">PRODUCTS <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT US <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">COOPERATION <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTS <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                        <ul class="d-md-flex align-items-center d-none flex-wrap flex-row">
+                            <li>
+                                <input class="search__input me-2" type="text" placeholder="Search" aria-label="Search">
+                            </li>
+                            <li>
+                                <span style="font-size:22px;cursor:pointer;color: aliceblue;" onclick="openNav()">
+                                    &#9776;
+                                </span>
+                            </li>
+                            <li>
+                                <span id="bag-icon" style="cursor: pointer;">
+                                    <img class="img-fluid" src="./img/icons/bag.svg" alt="">
+                                </span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+            <section class="border-top pt-5 mb-5 position-relative" id="section-1">
+                <div class="gold-line">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="z-indexTop position-relative col-lg-2 d-none d-lg-inline">
+                                <div class="position-absolute bakery-txt">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-white">"TheBakery" invites you to taste incredibly delicious
+                                            pastries
+                                            and
+                                            desserts! Watch a video overview of our bakery:</p>
+                                        <img class="img-fluid" src="./img/image 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="position-absolute b-0 bakery-large">
+                                    <div class="text-stroke-inner">
+                                        <span class="letter-stroke font-ElMessiri-Regulaer">
+                                            Bakery
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="position-relative">
+                                    <div
+                                        class="w-100 d-flex flex-column flex-nowrap justify-content-end align-items-stretch">
+                                        <img class="img-fluid" src="./img/img1.png" alt="" srcset="">
+                                    </div>
+                                    <div class="d-none d-md-inline option position-1">
+                                        <div class="back-drop-style">
+                                            <div class="d-flex flex-column text-center">
+                                                <p class="text-white m-0 color-yellow font-ElMessiri">
+                                                    100%
+                                                </p>
+                                                <p class="text-white m-0 font-ElMessiri">
+                                                    natural
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute d-none d-lg-block" id="line1">
+                                            <img src="./img/icons/line-right.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-inline option position-2">
+                                        <div class="back-drop-style">
+                                            <div class="d-flex flex-column text-center">
+                                                <p class="text-white m-0 color-yellow font-ElMessiri">
+                                                    2 M+
+                                                </p>
+                                                <p class="text-white m-0 font-ElMessiri">
+                                                    sales
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute d-none d-lg-block" id="line2">
+                                            <img src="./img/icons/line-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-md-inline option position-3">
+                                        <div class="back-drop-style">
+                                            <div class="d-flex flex-column text-center">
+                                                <p class="text-white m-0 color-yellow font-ElMessiri">
+                                                    20+
+                                                </p>
+                                                <p class="text-white m-0 font-ElMessiri">
+                                                    years
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute d-none d-lg-block" id="line3">
+                                            <img src="./img/icons/line-3.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="position-4 position-absolute z-indexTop text-center">
+                                        <div class="d-flex flex-column">
+                                            <div>
+                                                <button class="text-uppercase btn btn-costume font-ElMessiri">
+                                                    order now
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <p class="text-white font-Dubai">
+                                                    You can order any product from us with home delivery if you are in
+                                                    our
+                                                    city!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="z-indexTop position-relative col-lg-2 d-none d-lg-inline">
+                                <div class="position-absolute z-indexTop ul-pos">
+                                    <ul>
+                                        <li class="mr-100">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./img/icons/instagram.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="mr-100">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./img/icons/facebook.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="mr-100">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./img/icons/twitter.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="position-absolute b-0 left-70">
+                                    <div class="text-stroke-inner">
+                                        <span class="letter-stroke font-ElMessiri-Regulaer">
+                                            Desserts
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-2">
+                <div class="container text-center text-lg-left">
+                    <div class="row align-items-center p-5">
+                        <div class="col-sm-5 col-md-4 col-lg">
+                            <h1 class="text-capitalize text-white mx-lg-width">our client</h1>
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mb-lg-5">
+                            <img class="img-fluid" src="./img/icons/client 1.svg" alt="">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mt-lg-5">
+                            <img class="img-fluid" src="./img/icons/client 5.svg" alt="">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mb-lg-5">
+                            <img src="./img/icons/client 2.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mt-lg-5">
+                            <img src="./img/icons/client 4.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mb-lg-5">
+                            <img src="./img/icons/client 3.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="position-relative" id="section-3">
+                <div class="gold-line">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="col-sm-6">
+                                <div class="position-relative">
+                                    <div class="w-100">
+                                        <img class="img-fluid" src="./img/2_5416126697114178853.png" alt="" srcset="">
+                                    </div>
+                                    <div id="hndplus">
+                                        <div class="back-drop-style">
+                                            <div class="d-flex flex-column text-center">
+                                                <p class="text-white m-0 color-yellow font-ElMessiri">
+                                                    100+
+                                                </p>
+                                                <p class="text-white m-0 font-ElMessiri">
+                                                    different products
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute d-none d-lg-block" id="line-2">
+                                            <img src="./img/icons/Line 2.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div
+                                class="z-indexTop col-sm-5 d-flex align-content-center justify-content-center flex-column flex-wrap">
+                                <h1 class="text-white">Big Choice</h1>
+                                <p class="text-white w-75">
+                                    By visiting our bakery-confectionery, you will discover for yourself and your loved
+                                    ones
+                                    the
+                                    world of high quality sweets, exquisite taste of cakes and freshly baked bread!
+                                </p>
+                                <div class="w-50">
+                                    <button class="btn btn-outline-costume">
+                                        LOOK AT
+                                    </button>
+                                </div>
+                                <div id="scroll-down">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./img/icons/Scroll-dwn.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-4">
+                <div class="container text-center text-lg-left">
+                    <div class="row align-items-center p-5">
+                        <div class="col-sm-5 col-md-4 col-lg">
+                            <h1 class="text-capitalize text-white mx-lg-width">we create</h1>
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mb-lg-5">
+                            <img src="./img/icons/bread.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mt-lg-5">
+                            <img src="./img/icons/cookie.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mb-lg-5">
+                            <img src="./img/icons/croissants.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mt-lg-5">
+                            <img src="./img/icons/cupcakes.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg mb-4 mb-lg-5">
+                            <img src="./img/icons/cakes.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="position-relative" id="section-5">
+                <div class="gold-line">
+                    <div class="container-fluid p-5">
+                        <div class="row text-center d-block pb-5">
+                            <h1 class="text-white text-capitalize font-ElMessiri">catalog</h1>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/хлеб белорусский 1.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Bread "Belarusian"
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                rye flour, whole grain rye flour, premium wheat flour, malt, salt,
+                                                sourdough
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/хлеб тыквенный 1.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Bread "Pumpkin"
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                wheat flour, salt, barley malt,<br> sourdough, pumpkin, pumpkin seeds
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="d-flex flex-row">
+                                                <div class="row align-items-baseline">
+                                                    <div class="col">
+                                                        <p class="text-white max-width">
+                                                            2.90 PLN
+                                                        </p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" class="btn btn-costume">BUY</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/французский багет.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                French baguette
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                wheat flour, corn flour, salt, sourdough
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/багет венский 1.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Baguette "Vienna"
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                wheat flour, milk, sugar, butter,<br> sourdough, salt, egg
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/хлеб батар 1.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Bread "Batar"
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                wheat flour, corn flour, sourdough, salt
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/брецель 2.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Pretzel
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                wheat flour, malt, yeast, water, coarse <br>salt
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/круассан.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Croissant
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                wheat flour, butter for puff pastry,<br> water, granulated sugar, yeast,
+                                                salt
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/хлеб семейный 1.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Bread "Family"
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                wheat flour, salt, sourdough, malt
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="z-indexTop col-md-4 col-sm-6">
+                                    <div class="d-flex flex-column align-items-center align-content-center flex-wrap">
+                                        <div class="pt-3">
+                                            <img class="img-fluid" src="./img/bread/хлеб литовский 1.png" alt="">
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-white">
+                                                Bread "Lithuanian"
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <p class="text-center">
+                                                rye flour, wheat flour, sourdough, dark <br> malt, sugar, honey, caraway
+                                                seeds
+                                            </p>
+                                        </div>
+                                        <div class="pt-3">
+                                            <div class="row align-items-baseline">
+                                                <div class="col">
+                                                    <p class="text-white max-width">
+                                                        2.90 PLN
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-costume">BUY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 position-relative d-none d-lg-inline">
+                                <div class="position-absolute b-0 bakery-large">
+                                    <div class="text-stroke-inner">
+                                        <span class="letter-stroke font-ElMessiri-Regulaer">
+                                            Baguettes
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 position-relative d-none d-lg-inline">
+                                <div class="position-absolute b-0" id="Buns">
+                                    <div class="text-stroke-inner">
+                                        <span class="letter-stroke font-ElMessiri-Regulaer">
+                                            Croissants
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="pt-5 d-flex flex-row flex-wrap justify-content-center z-indexTop col-md-12 col-sm-12">
+                                <button class="btn btn-outline-costume font-ElMessiri" style="    padding: 7px 35px;">MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-sm-4 p-5 d-flex flex-column flex-wrap align-content-center justify-content-center">
+                            <div class="d-flex flex-column">
+                                <div>
+                                    <h1 class="text-white font-ElMessiri">
+                                        Most often they
+                                        <br>
+                                        order from us
+                                    </h1>
+                                </div>
+                                <div>
+                                    <h5 class="color-yellow font-Dubai">
+                                        Croissant with cream and <br> strawberries
+                                    </h5>
+                                </div>
+                                <div>
+                                    <p class="text-white font-Dubai">
+                                        Delicate puff pastry with custard, juicy strawberries and powdered sugar. Give
+                                        it a
+                                        try!
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="d-flex flex-row font-ElMessiri">
+                                        <button type="button" class="btn btn-costume mr-3">ORDER</button>
+                                        <button type="button" class="btn btn-outline-costume">DETAILS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="position-relative">
+                                <div class="w-100">
+                                    <img class="img-fluid" src="./img/2_5422367288890232747.png" alt="" srcset="">
+                                </div>
+                                <div class="position-absolute" id="PLN">
+                                    <div class="back-drop-style">
+                                        <p class="text-white m-0">
+                                            4.00 PLN
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="position-relative" id="section-7">
+                <div class="gold-line">
+                    <div class="container-fluid pt-5 pb-5">
+                        <div class="row pt-5 pb-5 p-5 p-md-0">
+                            <div class="col-sm-1 position-relative d-none d-md-inline">
+                                <div class="position-absolute b-0 bakery-large">
+                                    <div class="text-stroke-inner">
+                                        <span class="letter-stroke font-ElMessiri-Regulaer">
+                                            Cookie
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="position-relative">
+                                    <div class="w-100">
+                                        <img class="img-fluid" src="./img/2_5416126697114178791.png" alt="" srcset="">
+                                    </div>
+                                    <div id="hndplus">
+                                        <div class="back-drop-style">
+                                            <div class="d-flex flex-column text-center">
+                                                <p class="text-white m-0 color-yellow font-ElMessiri">
+                                                    100+
+                                                </p>
+                                                <p class="text-white m-0 font-ElMessiri">
+                                                    different products
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute d-none d-lg-block" id="line-left-2">
+                                            <img src="./img/icons/line-left-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-sm-5 d-flex z-indexTop text-left align-content-start flex-column justify-content-center">
+                                <h1 class="text-white text-capitalize font-ElMessiri">about us</h1>
+                                <p class="text-white font-Dubai">
+                                    "ThaBackery" products are of the highest quality: when baking bread, we use
+                                    sourdough,
+                                    the most expensive butter is used to work out croissants, while margarine and any
+                                    preservatives are excluded.
+                                    <br>
+                                    <br>
+                                    Each product is a baker's flight of imagination, while containing love and care for
+                                    everyone!
+                                    <br>
+                                    <br>
+                                    We regularly hold master classes where you can clearly see the professionalism of
+                                    our
+                                    employees and the high quality of our products.
+                                </p>
+                                <div class="w-50">
+                                    <button class="btn btn-outline-costume font-ElMessiri">
+                                        READ MORE
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-1 position-relative d-none d-md-inline">
+                                <div class="position-absolute b-0" id="Buns">
+                                    <div class="text-stroke-inner">
+                                        <span class="letter-stroke font-ElMessiri-Regulaer">
+                                            Buns
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-8">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mb-5 mb-lg-0 mb-md-0 col-sm-5 col-md-4 col-lg-3 text-center text-md-left">
+                            <div class="d-flex flex-column">
+                                <h1 class="text-capitalize color-yellow footer-brand">
+                                    TheBakery
+                                </h1>
+                                <p class="text-white detail-company">
+                                    The best bakery in Kielce, where you can enjoy the most delicious pastries and
+                                    sweets of
+                                    this city!
+                                </p>
+                                <div class="d-flex flex-row justify-content-around">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./img/icons/instagram.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="img-fluid" src="./img/icons/twitter.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="img-fluid" src="./img/icons/facebook.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 mb-lg-0 mb-md-0 col-sm-5 col-md-4 col-lg-2 text-center text-md-left">
+                            <h6 class="text-uppercase text-white mb-4 nav-text-val">
+                                navigation
+                            </h6>
+                            <ul id="navigation">
+                                <li><a class="color-grey" href="#">Products</a></li>
+                                <li><a class="color-grey" href="#">About us</a></li>
+                                <li><a class="color-grey" href="">Cooperation</a></li>
+                                <li><a class="color-grey" href="">Franchising</a></li>
+                                <li><a class="color-grey" href="">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-5 mb-lg-0 mb-md-0 col-sm-5 col-md-4 col-lg-1 text-center text-md-left">
+                            <img class="img-fluid" src="./img/icons/Scroll.svg" alt="">
+                        </div>
+                        <div class="mb-5 mb-lg-0 mb-md-0 col-sm-5 col-md-4 col-lg-3 text-center text-md-left">
+                            <div
+                                class="d-flex flex-column justify-content-between flex-wrap align-items-center align-items-lg-start">
+                                <div class="d-flex flex-row">
+                                    <div class="mr-1">
+                                        <img class="img-fluid" src="./img/icons/address.svg" alt="">
+                                    </div>
+                                    <div class="font-stile">
+                                        <p class="text-white">Langiewicza 81, Kielce, Poland</p>
+                                    </div>
+                                </div>
+
+                                <div class="align-items-center d-flex flex-row mt-5">
+                                    <div class="mr-1">
+                                        <img class="img-fluid" src="./img/icons/mail.svg" alt="">
+                                    </div>
+                                    <div class="font-stile">
+                                        <a href="mailto:thebakerykielce@gmail.com"
+                                            class="text-white">bakery@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="align-items-center d-flex flex-row mt-5">
+                                    <div class="mr-1">
+                                        <img class="img-fluid" src="./img/icons/phone.svg" alt="">
+                                    </div>
+                                    <div class="font-stile">
+                                        <a href="tel:+48 00 881 10 08" class="text-white">+48 00 881 10 08</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 mb-lg-0 mb-md-0 col-sm-5 col-md-4 col-lg-3">
+                            <div class="map-responsive">
+                                <iframe src="https://69be04bf.mima.pages.dev/" width="800" height="600"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="endpage">
+                <div class="container">
+                    <div class="row pt-4">
+                        <div class="col-md-6 col-lg-8">
+                            <p class="copyright text-white">
+                                2021 © Copyright belong to “TheBakery”
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 text-md-right">
+                            <p class="copyright text-white">
+                                <a href="#" class="color-yellow" target="_blank">Mohammad-HGH & Yana</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./JS/jquery-1.12.0.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+<script>
+    const Scrollbar = window.Scrollbar;
+    Scrollbar.init(document.querySelector('#my-scrollbar'));
+</script>
+
+</html>
